@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        #hob{
+            font-style: inherit;
+            font-size: medium;
+          background-color: coral   ;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="slide" direction="down">registration form</marquee>
+    <form method="post" enctype="multipart/form-data">
+        <H1>Username</H1>
+        <label for="firstname">firstname</label>
+        <input type="text" name="firstname" id="firstname"><br>
+        <label for="lastname">lastname</label>
+        <input type="text" name="lastname" id="lastname"><br>
+        <label for="mailid">mailid</label>
+        <input type="text" name="mailid" id="mailid"pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br>
+        <label for="DOB">Date of birth</label>
+        <input type="date" name="dob" id="dob"><br>
+        <label for="pass">password</label>
+        <input type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br>
+
+        <H2>Gender</H2>
+        <label for="01">male</label>
+        <input type="radio" name="gender" id="01">
+        <label for="02">female</label>
+        <input type="radio" name="gender" id="02"> <br>
+        <fieldset>
+ 
+      <legend><h3 id="hob">HOBBIES</h3></legend>
+      <label for="1">cricket</label>
+        <input type="checkbox" id="1"> <br>
+        <label for="2">football</label>
+        <input type="checkbox" id="2"> <br>
+        <label for="3">pc games</label>
+        <input type="checkbox"  id="3"> <br>
+        <label for="4">basketball</label>
+        <input type="checkbox"id="4"> <br>
+    </fieldset>
+        
+        <label for="submit"></label>
+        <center><input type="submit"id="submit"></center> <br>
+        <label for="city">city</label>
+        <select name="city" id="city">
+        <option value="chennai">chennai</option>
+        <option value="trichy">trichy</option>
+        <option value="madurai">madurai</option>
+        <option value="coimbatore">coimbatore</option>
+    </select>
+<input type="image" src="img/flat-icons.jpg" height="75cms" width="73">
+<input type="file">
+
+      
+    </form>
+</body>
+</html>
